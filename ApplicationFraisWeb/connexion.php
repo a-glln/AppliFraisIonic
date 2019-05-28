@@ -1,4 +1,5 @@
 <?php
+//connexion a la base de données
 header('Access-Control-Allow-Origin: *');
 $host_name = 'localhost';
 $database = 'gsb';

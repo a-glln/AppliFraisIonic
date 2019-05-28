@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
  */
 @Injectable()
 export class Api {
+  //lien de l'arborecense de notre fichier www de wamp
   url: string = 'http://localhost/AppliFraisIonic/ApplicationFraisWeb';
 
   constructor(public http: HttpClient) {

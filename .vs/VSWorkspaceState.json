@@ -4,13 +4,11 @@
     "\\ApplicationFraisMobile",
     "\\ApplicationFraisMobile\\src",
     "\\ApplicationFraisMobile\\src\\models",
-    "\\ApplicationFraisMobile\\src\\pages",
     "\\ApplicationFraisMobile\\src\\pages\\login",
     "\\ApplicationFraisMobile\\src\\providers",
-    "\\ApplicationFraisMobile\\src\\providers\\api",
     "\\ApplicationFraisMobile\\src\\providers\\user",
     "\\ApplicationFraisWeb"
   ],
-  "SelectedNode": "\\ApplicationFraisMobile\\src",
+  "SelectedNode": "\\ApplicationFraisWeb\\utilisateur.php",
   "PreviewInSolutionExplorer": false
 }

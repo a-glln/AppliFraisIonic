@@ -7,6 +7,7 @@ $password = '';
 
 $bdd = new PDO("mysql:host=$host_name; dbname=$database;", $user_name, $password);
 
+//requete pour recuperer toute les fiches frais pour un user donné
 $query = $bdd->prepare('SELECT `id`, `mois`, `annee` FROM fiche_frais WHERE utilisateur_id = :utilisateur ORDER BY annee DESC, mois DESC');
 $query->bindParam(':utilisateur', $_GET['utilisateur']);
 $query->execute();
