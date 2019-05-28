@@ -1,0 +1,37 @@
+<!--
+  Generated template for the ListeVisiteurPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>liste-visiteur</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+  <ion-card round>
+
+    <ion-card-content padding>
+      <ion-card *ngFor="let utilisateur of utilisateur">
+        <div class="card-title">ID : {{utilisateur.nomUtilisateur}}</div>
+        <!--<div class="card-text">Nom : {{visiteur.nom}}</div>
+        <div class="card-text">Prénom : {{visiteur.prenom}}</div>
+        <div class="card-text">Login : {{visiteur.login}}</div>
+        <div class="card-text">Mot de passe : {{visiteur.mdp}}</div>
+        <div class="card-text">Groupe : {{visiteur.groupe}}</div>
+        <div class="card-text">Adresse : {{visiteur.adresse}}</div>
+        <div class="card-text">Code postal : {{visiteur.cp}}</div>
+        <div class="card-text">Ville : {{visiteur.ville}}</div>
+        <div class="card-text">Date d'embauche : {{visiteur.dateEmbauche}}</div>-->
+      </ion-card>
+      <!--<div>
+        <button ion-button color="light" block (click)="NavAjoutUser()">Ajouter un utilisateur</button>
+      </div>
+      <div>
+        <button ion-button color="danger" block (click)="Deconnexion()">Déconnexion</button>
+      </div>-->
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header>
+  
+  <ion-navbar  color="primary">
+    <ion-title>{{ 'LOGIN_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+  
+</ion-header>
+
+
+<ion-content>
+ 
+  <div  text-center padding style="margin: 60px 16px 16px 16px;">
+    <img src="../../assets/img/gsb2.png" width="150" alt="">
+  </div>
+  <form (submit)="doLogin()">
+    <ion-list inset>
+      <ion-item>
+        <ion-label >
+          <ion-icon name="person" style="font-size: xx-large;" color="primary"></ion-icon>
+        </ion-label>
+        <ion-input type="email" [(ngModel)]="utilisateur.nomUtilisateur" name="email" placeholder="Username"></ion-input>
+      </ion-item>
+      <br />
+      <ion-item>
+        <ion-label>
+          <ion-icon name="unlock" style="font-size: xx-large;" color="primary"></ion-icon>
+        </ion-label>
+        <ion-input type="password" [(ngModel)]="utilisateur.motDePasse" name="password" placeholder="Password"></ion-input>
+      </ion-item>
+      <br />
+      <div style="margin-top: 25px;">
+        <button ion-button color="primary-shade" block>Connexion</button>
+      </div>     
+    </ion-list>
+  </form>
+</ion-content>

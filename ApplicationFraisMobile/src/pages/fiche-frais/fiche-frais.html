@@ -1,0 +1,28 @@
+<ion-header>
+  
+  <ion-toolbar color="primary" style="padding-top: 30px;">
+    <ion-title style="padding-top: 32px;">Fiches de frais<br /> {{ nom }} {{ prenom }} : Connecté</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="light" (click)="refresh()">
+        <ion-icon name="refresh"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+  
+</ion-header>
+
+
+<ion-content class="card-background-page">
+  <ion-list class="hydrated" inset>
+    <ion-list-header>{{ total }} résultat(s)</ion-list-header>
+    <ion-item-divider>
+      <ion-label>
+        2019
+      </ion-label>
+    </ion-item-divider>
+    <button ion-item *ngFor="let fiche of ficheFrais" (click)="goToDetail(fiche)" detail="false">
+      {{ moisLibelle[fiche.mois - 1] }} / {{fiche.annee}}
+    </button>
+  </ion-list>
+  
+</ion-content>

@@ -1,0 +1,61 @@
+<ion-header>
+  
+  <ion-navbar  color="primary">
+    <ion-title>{{moisLibelle[fiche.mois - 1]}} - {{fiche.annee}}</ion-title>
+  </ion-navbar>
+  
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header color="primary">
+      Frais forfaitisés ({{totalFraisForfaitises}})
+    </ion-list-header>
+    <ion-item *ngFor="let fraisforfaitise of fraisForfaitises" >
+      {{fraisforfaitise.quantite}} x {{fraisforfaitise.libelle}}
+      <span item-end>
+        {{fraisforfaitise.quantite * fraisforfaitise.montant}}€
+      </span>
+      <span *ngIf="fraisforfaitise.etat_id == 1" item-end>
+        <ion-icon name="checkmark" color="secondary" data-toggle="tooltip" title="Validé"></ion-icon>
+      </span>
+      <span *ngIf="fraisforfaitise.etat_id == 2" item-end>
+        <ion-icon name="close" color="danger" data-toggle="tooltip" title="Refuser"></ion-icon>
+      </span>
+      <span *ngIf="fraisforfaitise.etat_id == 3" item-end>
+        <ion-icon name="clipboard" color="primary" data-toggle="tooltip" title="En cours"></ion-icon>
+      </span>
+    </ion-item>
+  </ion-list>
+  
+  <br><br>
+  
+  <ion-list>
+    <ion-list-header color="primary">
+      Frais non forfaitisés ({{totalFraisNonForfaitises}})
+    </ion-list-header>
+    <ion-item *ngFor="let fraisNonForfaitise of fraisNonForfaitises">
+      {{fraisNonForfaitise.libelle}}
+      <span item-end>{{fraisNonForfaitise.montant}}€</span>
+      <span *ngIf="fraisNonForfaitise.etat_id == 1" item-end>
+        <ion-icon name="checkmark" color="secondary" data-toggle="tooltip" title="Validé"></ion-icon>
+      </span>
+      <span *ngIf="fraisNonForfaitise.etat_id == 2" item-end>
+        <ion-icon name="close" color="danger" data-toggle="tooltip" title="Refuser"></ion-icon>
+      </span>
+      <span *ngIf="fraisNonForfaitise.etat_id == 3" item-end>
+        <ion-icon name="clipboard" color="primary" data-toggle="tooltip" title="En cours"></ion-icon>
+      </span>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>
+      Total : {{total}}€
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

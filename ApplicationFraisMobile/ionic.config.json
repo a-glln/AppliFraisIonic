@@ -1,0 +1,7 @@
+{
+  "name": "ApplicationFraisMobile",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

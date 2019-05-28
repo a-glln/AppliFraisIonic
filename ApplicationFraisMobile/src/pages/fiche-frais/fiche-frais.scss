@@ -1,0 +1,43 @@
+page-fiche-frais {
+      .etat-ok{
+            color: #64dd17;
+            border-color: #64dd17;
+      }
+
+      .etat-ko{
+            color: #ff1744;
+            border-color: #ff1744;
+      }
+
+      .etat-encours{
+            color: #00b0ff;
+            border-color: #00b0ff;
+      }
+      
+      .card-background-page {
+            
+            ion-card {
+                  // position: relative;
+                  text-align: center;
+                  border-radius: 7px;
+            }
+            
+            .card-title {
+                  // position: absolute;
+                  top: 25%;
+                  font-size: 1.8em;
+                  width: 100%;
+                  font-weight: bold;
+                  color: #1f3e5f;
+            }
+            
+            .card-subtitle {
+                  font-size: 1.2em;
+                  // position: absolute;
+                  top: 52%;
+                  width: 100%;
+                  color: #1f3e5f;
+            }
+            
+      }
+}
