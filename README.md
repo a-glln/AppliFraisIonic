@@ -10,7 +10,8 @@ Dans ce projet vous trouvez un exemple d'application frais mobile avec les fonct
 - Page de la liste des fiches de frais de l'utilisateur connecté
 - Page de détail d'une fiche de frais selectionnée
 - Page de paramètrage (rappel des données de l'utilisateur + déconnexion)
-<br><br><br><br><br><br><br>
+<br>
+
 # Installation
 
 1. Cloner le projet dans **WAMP** ou **MAMP**
