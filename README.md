@@ -1,11 +1,16 @@
 # Application Frais Mobile (Ionic + PHP)
-
+<p>
+<img align="left" width="175" alt="1" src="http://www.adam-guillon.fr/img/gsb/mobile/connexion.png">
+  <img align="left" width="175" alt="2" src="http://www.adam-guillon.fr/img/gsb/mobile/menu.png">
+<img align="left" width="175" alt="2" src="http://www.adam-guillon.fr/img/gsb/mobile/detail.png">
+</p>
 Dans ce projet vous trouvez un exemple d'application frais mobile avec les fonctionnalités suivantes :
 
 - Page de connexion
 - Page de la liste des fiches de frais de l'utilisateur connecté
 - Page de détail d'une fiche de frais selectionnée
 - Page de paramètrage (rappel des données de l'utilisateur + déconnexion)
+<br>
 
 # Installation
 
